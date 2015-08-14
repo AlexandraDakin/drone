@@ -35,8 +35,10 @@ function fly(robot) {
     after(9*1000, function() {
         bot.drone.left(0.05);
     });
+
     after(12*1000, function() {
         bot.drone.left(0);
+        bot.drone.hover();
     });
 
     after(17*1000, function() {
@@ -45,6 +47,7 @@ function fly(robot) {
 
     after(20 *1000, function() {
         bot.drone.forward(0);
+        bot.drone.hover();
     });
 
 
@@ -54,6 +57,7 @@ function fly(robot) {
 
     after(28 *1000, function() {
         bot.drone.right(0);
+        bot.drone.hover();
     });
 
     after(33 *1000, function() {
@@ -62,6 +66,7 @@ function fly(robot) {
 
     after(36 *1000, function() {
         bot.drone.back(0);
+        bot.drone.hover();
     });
 
     after(41*1000,function() {
