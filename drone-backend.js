@@ -33,17 +33,42 @@ function fly(robot) {
     bot.drone.takeoff();
 
     after(9*1000, function() {
-        bot.drone.left(0.2);
+        bot.drone.left(0.05);
     });
     after(12*1000, function() {
         bot.drone.left(0);
     });
 
-    after(15*1000,function() {
+    after(17*1000, function() {
+        bot.drone.forward(0.05);
+    });
+
+    after(20 *1000, function() {
+        bot.drone.forward(0);
+    });
+
+
+    after(25 *1000, function() {
+        bot.drone.right(0.05);
+    });
+
+    after(28 *1000, function() {
+        bot.drone.right(0);
+    });
+
+    after(33 *1000, function() {
+        bot.drone.back(0.05);
+    });
+
+    after(36 *1000, function() {
+        bot.drone.back(0);
+    });
+
+    after(41*1000,function() {
         bot.drone.land();
     });
 
-    after(18*1000, function() {
+    after(45*1000, function() {
         bot.drone.stop();
     });
 
